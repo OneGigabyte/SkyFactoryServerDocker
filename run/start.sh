@@ -8,7 +8,7 @@ function accept_eula() {
 		start_minecraft
 
 		echo "[info] Waiting for Minecraft Java process to abort (expected, due to eula flag not set)..."
-		while pgrep -fu "nobody" "java" > /dev/null; do
+		while pgrep -fu "root" "java" > /dev/null; do
 			sleep 0.1
 		done
 		echo "[info] Minecraft Java process ended (expected)"
@@ -81,4 +81,4 @@ accept_eula
 
 start_minecraft
 
-source /home/nobody/webui.sh
+source /root/webui.sh
