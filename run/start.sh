@@ -74,11 +74,11 @@ else
 	# -p = keep source permissions for destination files/folders
 	echo "[info] Minecraft folder '/config/minecraft' already exists, rsyncing newer files..."
 	rsync -rltp --exclude 'world' --exclude '/server.properties' --exclude '/*.json' /srv/minecraft/ /config/minecraft
-
+ 
 fi
 
 accept_eula
 
 start_minecraft
 
-source /root/webui.sh
+sh /root/webui.sh
