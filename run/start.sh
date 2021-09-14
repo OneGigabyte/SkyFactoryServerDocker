@@ -81,4 +81,4 @@ accept_eula
 
 start_minecraft
 
-sh /root/webui.sh
+bash /root/webui.sh
